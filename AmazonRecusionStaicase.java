@@ -1,10 +1,7 @@
 import java.util.*;
 public class AmazonRecusionStaicase {
 	public static int Num(int n) {
-		if(n==0) {
-			return 1;
-		}
-		if(n==1) {
+		if(n==0 || n==1) {
 			return 1;
 		}
 		// One Step
@@ -14,7 +11,6 @@ public class AmazonRecusionStaicase {
 		
 		return one+two;
 	}
-	
 	
    public static void main(String args[]) {
 	   System.out.println(Num(4));
